@@ -1,0 +1,16 @@
+.input_todo{
+    padding: 0 0 2%;
+}
+.input_for_task{
+    width: 400px;
+    height: 40px;  
+    border: none;
+    border-top: 3px solid #4EA5D9;    
+    border-bottom: 3px solid #4EA5D9;
+    outline: none;
+    color:#3a162a;
+    padding-left: 10px;  
+    font-size: 1.7em; 
+    background-color: transparent;
+    font-family: 'Shadows Into Light', cursive;
+}

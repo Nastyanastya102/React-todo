@@ -1,11 +1,7 @@
+$font-stack: 'Courgette', cursive;
+$font-list:  'Shadows Into Light', cursive;
 .App {
   text-align: center;
-  h1{
-    font-size: 6.5vw;
-    margin: 1% 0;
-    font-family: 'Courgette', cursive;
-    color: rgba(48, 55, 82, 0.952);
-  }
   .todos{
     padding: 1% 2% ;
     width: 70%;
@@ -14,7 +10,7 @@
     background-color:#4ea5d957;
     overflow: auto;
     .empty{
-      font-family: 'Shadows Into Light', cursive;
+      font-family:$font-list;
       font-size: 3vw;
     }
   }

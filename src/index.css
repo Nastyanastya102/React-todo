@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   height: 100vh;
   background: url("./img/main.jpg") center/ cover no-repeat;
   margin: 0;

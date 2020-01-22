@@ -1,3 +1,5 @@
+$font-list:  'Shadows Into Light', cursive;
+
 .input_todo{
     padding: 0 0 2%;
 }
@@ -12,5 +14,5 @@
     padding-left: 10px;  
     font-size: 1.7em; 
     background-color: transparent;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: $font-list;
 }

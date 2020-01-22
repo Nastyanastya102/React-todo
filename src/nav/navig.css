@@ -1,0 +1,15 @@
+.nav-bar{
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+    height: 50px;
+}
+.nav-bar a{
+    margin: auto 0;
+    text-decoration: none;
+    font-family: 'Courgette', cursive;
+    color: rgba(48, 55, 82, 0.952);
+    text-transform: uppercase;
+    font-weight: 500;
+}

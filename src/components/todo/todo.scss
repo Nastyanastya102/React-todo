@@ -48,6 +48,19 @@ $font-stack: 'Courgette', cursive;
 
         .done {
             text-decoration: line-through;
+            color: #464545;
+            background-color: #6e6e6e44;
+            .change_input{
+                color:#676767;
+            }
+            .trash{
+                color: brown;
+            }
+            .check:checked:after{
+                color: brown;
+
+            }
+
         }
     }
     .task_time {

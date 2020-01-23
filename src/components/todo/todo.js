@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTrash} from '@fortawesome/free-solid-svg-icons';
 import FlipMove from 'react-flip-move';
 
-export default function Todo(props) {
+export default function Todo(props) { 
     const todoItems = props.todo.map((item, index) => 
             <li key={item.key}
             className={(item.completed)

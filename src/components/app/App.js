@@ -32,13 +32,14 @@ class App extends React.Component {
         event.preventDefault();
         const newItem = this.state.currentItem;
         if (newItem.text !== "") {
-            const newItems = [
-                ...this.state.items,
-                newItem
-            ];
+            const newItems = [...this.state.items, newItem];
             this.setState({
                 items: newItems,
-                currentItem: ({text: '', key: '', time: '', completed: ''})
+                currentItem: ({
+                 text: '',
+                 key: '',
+                 time: '', 
+                 completed: ''})
             })
         }
     }
@@ -53,14 +54,8 @@ class App extends React.Component {
         return done;
     }
     handelDelete = (key) => {
-        let arr = this
-            .state
-            .items
-            .findIndex((currentValue) => currentValue.key === key);
-        this
-            .state
-            .items
-            .splice(arr, 1);
+        let arr = this.state.items.findIndex((currentValue) => currentValue.key === key);
+        this.state.items.splice(arr, 1);
         this.setState({completed: false});
     }
     setUpdate = (text, key) => {

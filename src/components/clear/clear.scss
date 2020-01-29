@@ -1,0 +1,11 @@
+$font-stack: 'Courgette', cursive;
+
+.clear_item{
+    // border: .1px solid #000;
+    width: 74%;
+    margin: 0 auto;
+    padding: .7% 0;
+    font-family: $font-stack;
+    background-color: #146697b3;
+    cursor: pointer;
+}

@@ -3,6 +3,8 @@ import './App.scss';
 import Todo from '../todo/todo.js';
 import Form from '../form/form.js';
 import Header from '../header/header.js';
+import Clear from '../clear/clear.js';
+
 
 
 class App extends React.Component {
@@ -67,6 +69,9 @@ class App extends React.Component {
         })
         this.setState({items: items})
     }
+    deleteButtonClick =()=>{
+        this.setState({items: []});
+    }
     render() {
         return (
             <div className="App">
@@ -87,6 +92,7 @@ class App extends React.Component {
                                 handelDelete={this.handelDelete}
                                 setUpdate={this.setUpdate}/>} 
                     </div>
+                    <Clear deleteButtonClick={this.deleteButtonClick}/>
                 </main>
             </div>
         );

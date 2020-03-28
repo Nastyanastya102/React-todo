@@ -57,8 +57,9 @@ class App extends React.Component {
     }
     handelDelete = (key) => {
         let arr = this.state.items.findIndex((currentValue) => currentValue.key === key);
-        this.state.items.splice(arr, 1);
-        this.setState({completed: false});
+        let item = [...this.state.items];      
+        item.splice(arr, 1);
+        this.setState({items: item, completed: false});
     }
     setUpdate = (text, key) => {
         const items = this.state.items;
